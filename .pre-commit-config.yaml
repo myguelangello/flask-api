@@ -7,8 +7,8 @@ repos:
         language: system
         types: [python]
         args: [
-          "-rn",
-          "-sn",
-          "--rcfile=.pylintrc",
-          "--load-plugins=pylint.extensions.docparams",
+          "-rn", # Only display messages
+          "-sn", # Do not display the score
+          "--rcfile=.pylintrc", # Link to your config file
+          "--load-plugins=pylint.extensions.docparams", # Load the docparams plugin
           ]
